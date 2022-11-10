@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Buhid&display=swap');
+
+
+
+#logoAP {
+    width: 150px;
+    margin-left: 1%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    /* margin-left: 200px; */
+    /* padding-left: 50px; */
+    
+}
+
+nav ul li {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8%;
+    
+}
+
+
+
+.checkbtn {
+    /* color: #0b097c; */
+    float: right;
+    line-height: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    /* position: relative; */
+}
+
+#check {
+    display: none;
+}
+
+
+img{
+    width: 50px;
+}
+
+button img{
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding: 1%;
+}
+
+button{
+    color:rgb(221, 218, 218);
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+    font-family: 'Noto Sans Buhid', sans-serif;
+}
+
+/*---para la vista de celular y tablet---*/
+@media (max-width: 800px) {
+    #logoAP {
+        margin-left: 30px;
+    }
+
+    
+    nav ul li a {
+       padding-right: 2px;
+
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .checkbtn {
+        display: block;
+
+    }
+    
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #1c4d81;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all 1.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+        line-height: 30px;
+    }
+
+    
+    li a:hover,
+    li a.active {
+        background: none;
+        color: white;
+    }
+
+    #check:checked~ul {
+        left: 0;
+        z-index: 1;
+    }
+}
+
+
