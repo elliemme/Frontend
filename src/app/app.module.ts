@@ -17,6 +17,7 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { FooterComponent } from './components/footer/footer.component';
 import { HysComponent } from './components/hys/hys.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
+import { interceptorProvider } from './service/interceptor-service';
 
 
 
@@ -44,7 +45,9 @@ import { ProyectoComponent } from './components/proyecto/proyecto.component';
     BrowserAnimationsModule,
 
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
