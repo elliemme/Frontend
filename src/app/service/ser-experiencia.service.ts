@@ -12,7 +12,7 @@ import { Experiencia } from '../model/experiencia';
 
 
 export class SerExperienciaService {
-  expURL = 'http://localhost:8080/explab';
+  expURL = 'http://localhost:8080/explab/';
 //expURL = 'https://backendap-em.herokuapp.com/explab/';
 
   
