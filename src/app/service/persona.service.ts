@@ -16,20 +16,20 @@ export class PersonaService {
     return this.http.get<persona>(this.URL+ 'traer/perfil');
   }
 
-  /*public lista(): Observable<persona[]> {
-    return this.httpClient.get<persona[]>(this.URL + 'lista');
+  public lista(): Observable<persona[]> {
+    return this.http.get<persona[]>(this.URL + 'lista');
   }
 
   public detail(id: number): Observable<persona> {
-    return this.httpClient.get<persona>(this.URL + `detail/${id}`);
+    return this.http.get<persona>(this.URL + `detail/${id}`);
   }
 
   public save(Persona: persona): Observable<any> {
-    return this.httpClient.post<persona>(this.URL + 'create', Persona);
+    return this.http.post<persona>(this.URL + 'create', Persona);
   }
 
-  public update(id: number, Persona: persona): Observable<any> {
-    return this.httpClient.put<any>(this.URL + `update/${id}`, Persona);
+  public editPersona(id: number, Persona: persona): Observable<persona> {
+    return this.http.put<persona>(this.URL + `update/${id}`, Persona);
   }
 
   /*public delete(id: number): Observable<any> {
